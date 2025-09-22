@@ -1,0 +1,50 @@
+.product {
+  border: 1px solid #ddd; /* Borde alrededor del producto */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 16px; /* Espaciado interno */
+  margin: 16px; /* Espaciado externo */
+  width: 250px; /* Ancho fijo para cada producto */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  text-align: center; /* Centra el contenido */
+  background-color: #fff; /* Fondo blanco */
+}
+
+.product img {
+  width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.product-title {
+  font-size: 1.2rem; /* Tamaño del título */
+  margin: 12px 0; /* Espaciado superior e inferior */
+  color: #333; /* Color del texto */
+}
+
+.product-description {
+  font-size: 0.9rem; /* Tamaño del texto */
+  color: #555; /* Color del texto */
+  margin: 8px 0; /* Espaciado entre párrafos */
+}
+
+.product-price {
+  font-size: 1rem; /* Tamaño del precio */
+  font-weight: bold; /* Negrita para el precio */
+  color: #007bff; /* Color azul para destacar el precio */
+  margin: 8px 0;
+}
+
+.cart-button {
+  background-color: #007bff; /* Color azul para el botón */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 8px 16px; /* Espaciado interno */
+  font-size: 0.9rem; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Animación suave al pasar el cursor */
+}
+
+.cart-button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el cursor */
+}

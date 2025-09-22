@@ -1,0 +1,8 @@
+.product-container {
+  display: flex; /* Alinea los productos en una fila */
+  flex-wrap: wrap; /* Permite que los productos se ajusten en varias filas si no hay espacio */
+  justify-content: center; /* Centra los productos horizontalmente */
+  gap: 16px; /* Espaciado entre los productos */
+  padding: 16px; /* Espaciado interno del contenedor */
+  margin-top: 10vh; /* Asegura que el contenido no quede oculto detrás del header */
+}
