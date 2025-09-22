@@ -1,12 +1,56 @@
-# React + Vite
+# Tienda de Comics - React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una tienda de cómics desarrollada con **React**. Permite a los usuarios explorar una lista de productos (cómics) con detalles como título, precio e imagen. También incluye un carrito de compras representado por un ícono en el encabezado.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Header fijo**: Un encabezado con navegación y un ícono de carrito.
+- **Lista de productos**: Los productos se muestran en un diseño horizontal y responsivo.
+- **Componentización**: Uso de componentes reutilizables como `Header`, `ProductContainer`, `Product` y `CardWidget`.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estructura del Proyecto
+
+```plaintext
+src/
+├── components/
+│   ├── header.jsx           # Encabezado con navegación y carrito
+│   ├── productContainer.jsx  # Contenedor de productos
+│   ├── product.jsx          # Componente individual para cada producto
+│   ├── cardWidget.jsx       # Ícono del carrito
+├── styles/
+│   ├── header.css           # Estilos para el encabezado
+│   ├── productContainer.css # Estilos para el contenedor de productos
+│   ├── product.css          # Estilos para los productos individuales
+├── App.jsx                  # Componente principal de la aplicación
+├── index.css                # Estilos globales
+├── index.js                 # Punto de entrada de la aplicación
+```
+
+## Requisitos Previos
+
+Node.js (v14 o superior)
+npm (v6 o superior) o yarn
+
+## Instalación
+
+## Clona este repositorio:
+
+https://github.com/gabycavalli/react.git
+
+## Navega al directorio del proyecto:
+
+cd react2025
+
+## Instala las dependencias:
+
+npm install
+
+## Ejecución
+
+Para iniciar el servidor de desarrollo, ejecuta:
+
+npm start
+
+Esto abrirá la aplicación en tu navegador en http://localhost:3000.
