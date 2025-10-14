@@ -1,5 +1,6 @@
 import '../styles/header.css';
 import CardWidget from './cardWidget';
+import { Link } from 'react-router';
 
 function Header() {
   return (
@@ -8,16 +9,22 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <a href="#">Inicio</a>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <a href="#">Productos</a>
+            <Link to="/category/marvel">Marvel Comics</Link>
           </li>
           <li>
-            <a href="#">Acerca de</a>
+            <Link to="/category/DC">DC Comics</Link>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <Link to="others/">Otros Productos</Link>
+          </li>
+          <li>
+            <Link to="contacts/">Contacto</Link>
+          </li>
+          <li>
+            <Link to="details/">Detalles</Link>
           </li>
         </ul>
       </nav>

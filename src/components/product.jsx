@@ -1,4 +1,6 @@
 import '../styles/product.css';
+import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 function Product(props) {
   return (
     <div className="product">
@@ -9,8 +11,11 @@ function Product(props) {
         Infinite Earths, DC revealed that the Titans will be stepping into the
         team's shoes during the Dawn of DC event.
       </p>
-      <p className="product-price">{props.price}</p>
-      <button className="cart-button">Add to cart</button>
+      {/*<p className="product-price">{props.price}</p>*/}
+      {/*<button className="cart-button">Add to cart</button>*/}
+      <Link to={`/detail/${props.id}`}>
+        <button className="details-button">Ver Detalle</button>
+      </Link>
     </div>
   );
 }

@@ -48,3 +48,18 @@
 .cart-button:hover {
   background-color: #0056b3; /* Color más oscuro al pasar el cursor */
 }
+
+.details-button {
+  background-color: #28a745; /* Color verde para el botón */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 8px 16px; /* Espaciado interno */
+  font-size: 0.9rem; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Animación suave al pasar el cursor */
+}
+
+.details-button:hover {
+  background-color: #1e7e34; /* Color más oscuro al pasar el cursor */
+}
