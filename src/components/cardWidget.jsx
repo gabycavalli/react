@@ -1,4 +1,9 @@
+import React, { useContext } from 'react';
+import CartContext from './cartContext.jsx';
+
+
 function CardWidget() {
+  const { cartItems } = useContext(CartContext);
   return (
     <span>
       <img
@@ -6,6 +11,7 @@ function CardWidget() {
         alt="cart"
         style={{ width: '30px', height: '30px' }}
       />
+      {cartItems.length}
     </span>
   );
 }
