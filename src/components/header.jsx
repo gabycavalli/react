@@ -1,5 +1,5 @@
 import '../styles/header.css';
-import CardWidget from './cardWidget';
+import CardWidget from './cartWidget';
 import { Link } from 'react-router';
 
 function Header() {
