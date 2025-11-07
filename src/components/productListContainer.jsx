@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Product from './product';
 import '../styles/productContainer.css';
-import { getData, getDataByCategory } from '../../src/mockApi/getData.js';
+//import { getData, getDataByCategory } from '../../src/mockApi/getData.js';
+import { getData, getDataByCategory } from '../data/FirestoreService';
 import { useParams } from 'react-router';
 
 function ProductListContainer() {
+  getData();
+
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const { catParam } = useParams();

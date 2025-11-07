@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router';
 import ProductDetailContainer from './components/productDetailContainer.jsx';
 import { CartProvider } from './components/cartContext.jsx';
 import Cart from './components/cart';
+import { exportDataToFirestore } from './data/FirestoreService.js';
 
 function App() {
   return (
